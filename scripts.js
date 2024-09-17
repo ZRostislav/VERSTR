@@ -1,3 +1,10 @@
+$(document).ready(function () {
+  $(".bar-hud").click(function (event) {
+    $(".bar-hud, .bar-pages").toggleClass("activeBurger");
+    $(".bar-pages").toggleClass("element-to-animate");
+  });
+});
+
 const items = document.querySelectorAll(".bar-pages__text");
 
 items.forEach((item) => {
@@ -5,7 +12,6 @@ items.forEach((item) => {
     items.forEach((el) => el.classList.remove("active"));
 
     this.classList.add("active");
-    console.log(item);
   });
 });
 
